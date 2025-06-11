@@ -1,0 +1,196 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFD1DC;
+}
+header {
+    background-color: #FF69B4 ;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Sobre mí */
+#sobre-mi {
+    text-align: center;
+    margin: 20px;
+}
+
+#sobre-mi img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FF69B4;
+}
+
+/* Estilos para la sección Qué hago */
+#que-hago {
+    background-color: #fff0f5;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.servicio {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+/* Tabla de tecnologías */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Diseño limpio sin separación entre celdas */
+}
+
+table, th, td {
+    border: 2px solid #FF69B4;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #FF69B4;
+    color: white;
+}
+
+/* Centrar título de la sección tecnologías e intereses */
+#tecnologias h2 {
+    text-align: center;
+}
+/* Formulario de contacto */
+#contacto {
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+form label, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #357ab7; /* Efecto al pasar mouse */
+}
+
+a:link {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d26c99;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #357ab7;
+}
+
+a:active {
+    color: #ff1493;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe6f0;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Imagen con texto superpuesto */
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+}
+
+.contenedor-imagen img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FF69B4;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .servicios {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .servicio {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #contacto {
+      padding: 10px;
+    }
+  
+    form input {
+      font-size: 14px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
