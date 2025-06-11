@@ -47,7 +47,7 @@ README.md
 
 ## 📷 Vista previa
 
-<img src="assets/img/sample.png" alt="Captura del portafolio" width="600">
+<img src="img/sample.png" alt="Captura del portafolio" width="600">
 
 ---
 
